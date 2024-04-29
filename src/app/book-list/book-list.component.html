@@ -1,0 +1,7 @@
+<mat-grid-list cols="9" rowHeight="364px" gutterSize="18px">
+    @for (book of books; track book.id) {
+        <mat-grid-tile>
+            <app-book-list-item [book]="book" />
+        </mat-grid-tile>
+    }
+</mat-grid-list>

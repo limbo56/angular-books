@@ -1,0 +1,12 @@
+.category-button {
+    height: 100%;
+}
+
+.category-container {
+    text-align: start;
+}
+
+.category-image {
+    object-fit: cover; 
+    border-radius: 8px;
+}

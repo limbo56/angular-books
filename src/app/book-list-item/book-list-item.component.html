@@ -1,0 +1,21 @@
+<div class="book-container">
+    <img class="book-thumbnail" [src]="book.volumeInfo.imageLinks?.thumbnail || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwYR089AoULZqxaMRSIpJe2QDi2ipraXAqQxH__aJpA&s'" />
+    <div>
+        <h1 class="book-title">{{ book.volumeInfo.title || 'Unkown' }}</h1>
+        <div class="book-info">
+            <span>{{ (book.volumeInfo.averageRating || 0) | number: '1.1' }}</span>
+            <mat-icon class="book-rating-icon">star</mat-icon>
+        </div>
+        @if (!isInLibrary()) {
+            <button mat-stroked-button class="book-action-button" color="primary" (click)="addToLibrary()">
+                Save
+                <mat-icon>library_books</mat-icon>
+            </button>
+        } @else {
+            <button mat-stroked-button class="book-action-button" color="accent" (click)="removeFromLibrary()">
+                Remove
+                <mat-icon>library_books</mat-icon>
+            </button>
+        }
+    </div>
+</div>

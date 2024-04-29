@@ -1,0 +1,33 @@
+.book-container {
+    display: flex; 
+    flex-direction: column;
+    min-width: 148px;
+    max-width: 148px; 
+}
+
+.book-thumbnail {
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+.book-title {
+    margin: 0; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    font-size: large;
+}
+
+.book-info {
+    display: flex; 
+    align-items: center;
+}
+
+.book-rating-icon {
+    transform: scale(0.6); 
+    color: gray;
+}
+
+.book-action-button {
+    margin-top: 8px;
+}

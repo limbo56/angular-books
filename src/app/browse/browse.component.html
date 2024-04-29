@@ -1,0 +1,21 @@
+<mat-grid-list cols="5" rowHeight="8:13">
+    @for (category of BOOK_CATEGORIES; track $index) {
+        <mat-grid-tile>
+            <app-book-category [type]="category.type" [title]="category.title" [source]="category.source" />
+        </mat-grid-tile>
+    }
+    <!-- <h1>Biography & Memoir</h1>
+    <h1>Self-Help & Personal Development</h1>
+    <h1>Business & Economics</h1>
+    <h1>Travel</h1>
+    <h1>Science & Nature</h1>
+    <h1>Health & Wellness</h1>
+    <h1>Cooking, Food & Wine</h1>
+    <h1>Art & Photography</h1>
+    <h1>Religion & Spirituality</h1>
+    <h1>Politics & Current Affairs</h1>
+    <h1>Young Adult</h1>
+    <h1>Children's Books</h1>
+    <h1>Poetry</h1>
+    <h1>Graphic Novels & Comics</h1>  -->
+</mat-grid-list>

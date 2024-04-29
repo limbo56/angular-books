@@ -1,0 +1,25 @@
+<main class="full-height">
+  <mat-drawer-container class="full-height" autosize>
+    <mat-drawer #drawer mode="side" opened>
+      <div class="drawer-routes">
+        @for (route of routes; track $index) {
+          @if (route?.data?.['display']) {
+            <button mat-button [attr.aria-label]="route.title" (click)="navigateToRoute(route.path ?? 'library')">
+              <mat-icon>{{ route?.data?.['icon'] }}</mat-icon>
+              <span>{{ route.title }}</span>
+            </button>
+          }
+        }
+      </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar>
+        <mat-icon>{{ getPageIcon() }}</mat-icon>
+        <span class="toolbar-title">{{ getPageTitle() }}</span>
+      </mat-toolbar>
+      <div class="drawer-content">
+        <router-outlet />
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</main>

@@ -1,0 +1,13 @@
+@if (!isLoading) {
+    @defer {
+        <app-book-list [books]="books" />
+    } @loading {
+        <div class="loading-container">
+            <mat-spinner class="loading-spinner" mode="indeterminate"></mat-spinner>
+        </div>
+    }
+} @else {
+    <div class="loading-container">
+        <mat-spinner class="loading-spinner" mode="indeterminate"></mat-spinner>
+    </div>
+}
