@@ -1,7 +1,9 @@
-<mat-grid-list cols="9" rowHeight="364px" gutterSize="18px">
+<mat-grid-list class="list" cols="9" rowHeight="364px" gutterSize="2px">
     @for (book of books; track book.id) {
         <mat-grid-tile>
-            <app-book-list-item [book]="book" />
+            <div class="list-tile">
+                <app-book-list-item [book]="book" />
+            </div>
         </mat-grid-tile>
     }
 </mat-grid-list>
