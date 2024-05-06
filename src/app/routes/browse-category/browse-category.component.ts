@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { BookListComponent } from '../book-list/book-list.component';
-import { BooksService } from '../services/books.service';
-import { BookVolume } from '../interfaces/book-volume';
+import { BookListComponent } from '../../components/book-list/book-list.component';
+import { BooksService } from '../../services/books.service';
+import { BookVolume } from '../../interfaces/book-volume';
 
 @Component({
   selector: 'app-browse-category',

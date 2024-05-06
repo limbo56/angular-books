@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { BookCategoryComponent } from '../book-category/book-category.component';
+import { BookCategoryComponent } from '../../components/book-category/book-category.component';
 
 type BookCategory = {
   type: string

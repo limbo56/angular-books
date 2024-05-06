@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { LibraryComponent } from './library/library.component';
-import { BrowseComponent } from './browse/browse.component';
-import { BrowseCategoryComponent } from './browse-category/browse-category.component';
+import { LibraryComponent } from './routes/library/library.component';
+import { BrowseComponent } from './routes/browse/browse.component';
+import { BrowseCategoryComponent } from './routes/browse-category/browse-category.component';
 
 export const routes: Routes = [
     {

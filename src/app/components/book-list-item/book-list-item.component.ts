@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { BookVolume } from '../interfaces/book-volume';
+import { BookVolume } from '../../interfaces/book-volume';
 import { MatButtonModule } from '@angular/material/button';
-import { LibraryService } from '../services/library.service';
+import { LibraryService } from '../../services/library.service';
 
 @Component({
   selector: 'app-book-list-item',

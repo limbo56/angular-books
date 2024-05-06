@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BookListComponent } from '../book-list/book-list.component';
+import { BookListComponent } from '../../components/book-list/book-list.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { BookVolume } from '../interfaces/book-volume';
-import { LibraryService } from '../services/library.service';
+import { BookVolume } from '../../interfaces/book-volume';
+import { LibraryService } from '../../services/library.service';
 
 @Component({
   selector: 'app-library',
